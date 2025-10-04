@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <I><title>Packaging Technology</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="C:\packaging\logo.jpg">
+        <nav>
+                <h1>Packaging Technology</h1>
+                <a href="C:\packaging\About Department.html">About Department</a>
+                <a href="C:\packaging\Faculty Member.html">Faculty Member</a>
+                <a href="C:\packaging\Syllabus.html">Syllabus</a>
+        </nav>
+    </header>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+    // Example navigation event listeners
+    document.getElementById('aboutDept').addEventListener('click', function() {
+        showSection('aboutSection');
+    });
+    document.getElementById('facultyMember').addEventListener('click', function() {
+        showSection('facultySection');
+    });
+    document.getElementById('syllabus').addEventListener('click', function() {
+        showSection('syllabusSection');
+    });
+
+    function showSection(sectionId) {
+        // Hide all sections
+        document.getElementById('aboutSection').style.display = 'none';
+        document.getElementById('facultySection').style.display = 'none';
+        document.getElementById('syllabusSection').style.display = 'none';
+        // Show selected section
+        document.getElementById(sectionId).style.display = 'block';
+    }
+});
+</script>
+   <footer> <marquee>Prepared By Mayank Gathibandhe </marquee></footer>
+    </I>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* Page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/* Header: no background color for whole header */
+header {
+  background: transparent; /* header ka background removed */
+  padding: 30px 15px;
+}
+
+/* Logo wrapper: only this has background */
+.logo-wrap {
+  display: inline-block;              /* center karne ke liye inline-block + text-align:center on body */
+  background: #06eb786b;                /* logo ke peeche ka color */
+  padding: 12px;                      /* spacing around logo */
+  border-radius: 12px;                /* rounded look */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Logo image */
+.logo-wrap img {
+  display: block;
+  height: 90px;       /* zarurat pade to adjust karein */
+  width: auto;
+}
+
+/* Heading (on page background - no colored header) */
+header h1 {
+    background-color: #07e207;
+  font-size: 34px;
+  color: #971504;     /* dark color so it's visible on light bg */
+  margin-top: 16px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* Nav */
+nav {
+  margin-top: 8px;
+}
+nav a {
+  color: #ca137e;      /* dark links suitable for light background */
+  text-decoration: none;
+  margin: 0 16px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color .25s ease;
+}
+nav a:hover { color: #6d5950; }
+
+/* Main & Footer */
+main { padding: 40px 20px; text-align: center; }
+footer {
+  background: #0b638f;
+  color: #43b849;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 40px;
+}
+/*Footer marquee color change*/
+footer marquee { color: #fff; font-weight: bold; }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .logo-wrap img { height: 64px; }
+  header h1 { font-size: 22px; margin-top: 12px; }
+  nav a { margin: 0 10px; font-size: 16px; }
+}
